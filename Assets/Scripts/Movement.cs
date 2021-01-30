@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         transform.Translate(new Vector3(horizontalInput, verticalInput, 0) * moveSpeed * Time.deltaTime);
         float z = transform.rotation.z;
-        Debug.Log("h: "+horizontalInput+" v: "+verticalInput);
+        //Debug.Log("h: "+horizontalInput+" v: "+verticalInput);
         
         if( z < 0 && z > -0.70){
 
