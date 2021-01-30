@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 153167834}
   - component: {fileID: 153167833}
   - component: {fileID: 153167832}
+  - component: {fileID: 153167835}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -210,12 +211,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153167831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 11.98, y: -11.76, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &153167835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153167831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbde6df0934c154790633be2aeb2c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &155357008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -764,7 +777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840264210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.733087, y: -2.5688646, z: -40.20703}
+  m_LocalPosition: {x: 9.733087, y: -2.5688646, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 155357009}
@@ -1051,6 +1064,18 @@ MonoBehaviour:
   - {fileID: 646208544}
   - {fileID: 1433725760}
   index: 0
+--- !u!114 &1200338614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200338612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6471f24a9f1bf5b4fb9e530b3e7213ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1200338620
 Rigidbody2D:
   serializedVersion: 4
@@ -2134,7 +2159,7 @@ PrefabInstance:
     - target: {fileID: 3216728996052723417, guid: ce8b271b2ffe33943b199542e2d46d84,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -71.43236
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3216728996052723417, guid: ce8b271b2ffe33943b199542e2d46d84,
         type: 3}
@@ -2175,6 +2200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3216728997136457142, guid: ce8b271b2ffe33943b199542e2d46d84,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8b271b2ffe33943b199542e2d46d84, type: 3}
@@ -2321,6 +2351,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cb8362aa72e32442acf4e804b79f1ef, type: 3}
+--- !u!1 &6698575556474797778 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6698575555822240295, guid: 3cb8362aa72e32442acf4e804b79f1ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 6698575556474797777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6698575556474797779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698575556474797778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4df8c61e793444bbc378aab30fb56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 10
+--- !u!143 &6698575556474797782
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698575556474797778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7648805669732861287
 PrefabInstance:
   m_ObjectHideFlags: 0
